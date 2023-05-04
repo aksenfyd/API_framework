@@ -1,6 +1,5 @@
 #include "MainUpdate.h"
-#include "GameObject.h"
-#include "Player.h"
+#include "Scene.h"
 
 
 MainUpdate::MainUpdate() : m_pPlayer(NULL)
@@ -15,35 +14,29 @@ MainUpdate::~MainUpdate()
 
 void MainUpdate::Start()
 {
-	m_hdc = GetDC(g_hWnd);
-
-	m_pPlayer = new Player();
-	m_pPlayer ->Start();
-
+	
 }
 
 void MainUpdate::Update()
 {
 
-	m_pPlayer ->Update();
+	
 
+	
 }
 
 void MainUpdate::Render()
 {
+	Rectangle(m_hdc, 0, 0, WIDTH, HEIGHT);
 	
-	/*Rectangle(m_hdc,
-		rcPoint.left,
-		rcPoint.top,
-		rcPoint.right,
-		rcPoint.bottom);*/
-	Rectangle(m_hdc, 0, 0, 1420, 720);
-
-	m_pPlayer ->Render(m_hdc);
 }
 
 void MainUpdate::Destroy()
 {
-	delete m_pPlayer;
-	m_pPlayer=NULL;
+	if (m_pPlayer)
+	{
+		delete m_pPlayer;
+		m_pPlayer = NULL;
+	}
+
 }

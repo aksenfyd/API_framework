@@ -1,0 +1,32 @@
+#pragma once
+#include "Include.h"
+
+class Scene;
+class SceneManager
+{
+private:
+	static SceneManager* Instance;
+
+public:
+	static SceneManager* GetInstance()
+	{
+		if (Instance == nullptr)
+			Instance = new SceneManager;
+
+		return Instance;
+	}
+
+private:
+	Scene* SceneState;
+public:
+	void SetScene(SCENEID _State);
+	void Update()PURE;
+	void Render(HDC hdc)PURE;
+	void Destroy()PURE;
+
+private:
+	SceneManager();
+public:
+	~SceneManager();
+};
+

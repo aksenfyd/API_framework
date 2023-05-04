@@ -22,11 +22,41 @@
     <Filter Include="소스 파일\00.MainUpdate">
       <UniqueIdentifier>{aebf677c-a4b4-445c-8464-41f3baf9ee37}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01.Object">
+    <Filter Include="소스 파일\01.GameObject">
       <UniqueIdentifier>{4f5ecc14-a988-4a57-b35e-ea17e1cbe14b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01.Object\Player">
+    <Filter Include="소스 파일\01.GameObject\Player">
       <UniqueIdentifier>{2068cc77-ec63-41e8-8e83-ab325c7ce53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject\Bullet">
+      <UniqueIdentifier>{1e46eb1e-72ea-4215-a0fa-eddaf5cbfe4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01.GameObject\Enemy">
+      <UniqueIdentifier>{ca3123d6-786c-4aa6-9330-b03238370441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager">
+      <UniqueIdentifier>{483dbdfa-0899-4597-9f2d-df82b2fd13a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager\ObjectManager">
+      <UniqueIdentifier>{cf0b9d07-00f2-4124-8745-74d9748b155b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager\CollisionManager">
+      <UniqueIdentifier>{554f69dd-20e1-4de3-9807-4e3b4b8b0b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99.Manager\SceneManager">
+      <UniqueIdentifier>{d24bc9e4-a9a3-4e5b-8101-206288efbc13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02.Scene">
+      <UniqueIdentifier>{d2e8f776-6203-402f-8b0d-a55ea0f4d891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02.Scene\LOGO">
+      <UniqueIdentifier>{61144694-f738-4dd8-b001-37a594c9397d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02.Scene\MENU">
+      <UniqueIdentifier>{753ab3a3-684d-44cb-8117-79d4be6945d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02.Scene\Stage">
+      <UniqueIdentifier>{533240ab-939e-4707-b003-afeaffbcede8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,13 +82,43 @@
       <Filter>헤더 파일\include</Filter>
     </ClInclude>
     <ClInclude Include="GameObject.h">
-      <Filter>소스 파일\01.Object</Filter>
+      <Filter>소스 파일\01.GameObject</Filter>
     </ClInclude>
     <ClInclude Include="Structs.h">
       <Filter>헤더 파일\include</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
-      <Filter>소스 파일\01.Object\Player</Filter>
+      <Filter>소스 파일\01.GameObject\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>소스 파일\01.GameObject\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>소스 파일\01.GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager.h">
+      <Filter>소스 파일\99.Manager\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>소스 파일\99.Manager\CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>소스 파일\99.Manager\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>헤더 파일\include</Filter>
+    </ClInclude>
+    <ClInclude Include="LOGO.h">
+      <Filter>소스 파일\02.Scene\LOGO</Filter>
+    </ClInclude>
+    <ClInclude Include="MENU.h">
+      <Filter>소스 파일\02.Scene\MENU</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>소스 파일\02.Scene\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\02.Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -69,10 +129,34 @@
       <Filter>소스 파일\00.MainUpdate</Filter>
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
-      <Filter>소스 파일\01.Object</Filter>
+      <Filter>소스 파일\01.GameObject</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
-      <Filter>소스 파일\01.Object\Player</Filter>
+      <Filter>소스 파일\01.GameObject\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>소스 파일\01.GameObject\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>소스 파일\01.GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager.cpp">
+      <Filter>소스 파일\99.Manager\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>소스 파일\99.Manager\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="LOGO.cpp">
+      <Filter>소스 파일\02.Scene\LOGO</Filter>
+    </ClCompile>
+    <ClCompile Include="MENU.cpp">
+      <Filter>소스 파일\02.Scene\MENU</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>소스 파일\02.Scene\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\02.Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
