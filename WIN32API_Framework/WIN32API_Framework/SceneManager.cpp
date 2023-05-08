@@ -1,7 +1,7 @@
 #include "SceneManager.h"
 
-#include "LOGO.h"
-#include "MENU.h"
+#include "Logo.h"
+#include "Menu.h"
 #include "Stage.h"
 
 SceneManager* SceneManager::Instance = nullptr;
@@ -25,15 +25,15 @@ void SceneManager::SetScene(SCENEID _State)
 	{
 
 	case LOGO:
-		SceneState = new LOGO;
+		SceneState = new Logo;
 		break;
 
 	case MENU:
-		SceneState = new MENU;
+		SceneState = new Menu;
 		break;
 
 	case STAGE:
-		SceneState = new STAGE;
+		SceneState = new Stage;
 		break;
 
 	}

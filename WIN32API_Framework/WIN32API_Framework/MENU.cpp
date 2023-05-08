@@ -1,18 +1,18 @@
-#include "MENU.h"
+#include "Menu.h"
 #include "SceneManager.h"
 
-MENU::MENU()
+Menu::Menu()
 {
 }
 
-MENU::~MENU()
+Menu::~Menu()
 {
 }
-void MENU::Start()
+void Menu::Start()
 {
 }
 
-int MENU::Update()
+int Menu::Update()
 {
 	if (GetAsyncKeyState('S'))
 	{
@@ -21,11 +21,11 @@ int MENU::Update()
 	return 0;
 }
 
-void MENU::Render(HDC hdc)
+void Menu::Render(HDC hdc)
 {
 	Ellipse(hdc, 500, 500, 600, 600);
 }
 
-void MENU::Destroy()
+void Menu::Destroy()
 {
 }

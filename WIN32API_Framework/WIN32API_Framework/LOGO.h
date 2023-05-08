@@ -1,14 +1,14 @@
 #pragma once
 #include "Scene.h"
-class LOGO
+class Logo:public Scene
 {
 public:
-	virtual void Start()PURE;
-	virtual int Update()PURE;
-	virtual void Render(HDC hdc)PURE;
-	virtual void Destroy()PURE;
+	virtual void Start()override;
+	virtual int Update()override;
+	virtual void Render(HDC hdc)override;
+	virtual void Destroy()override;
 public:
-	LOGO();
-	virtual ~LOGO();
+	Logo();
+	virtual ~Logo();
 };
 

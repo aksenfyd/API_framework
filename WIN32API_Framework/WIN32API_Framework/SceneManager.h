@@ -20,9 +20,9 @@ private:
 	Scene* SceneState;
 public:
 	void SetScene(SCENEID _State);
-	void Update()PURE;
-	void Render(HDC hdc)PURE;
-	void Destroy()PURE;
+	void Update();
+	void Render(HDC hdc);
+	void Destroy();
 
 private:
 	SceneManager();

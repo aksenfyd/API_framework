@@ -2,17 +2,19 @@
 #include "Scene.h"
 
 class GameObject;
-class Stage
+class Stage:public Scene
 {
 private:
 	HDC m_hdc;
 	GameObject* m_pPlayer;
 	GameObject* m_pEnemy;
+	list<GameObject*>* EnemyList;
+	list<GameObject*>* BulletList;
 public:
-	virtual void Start()PURE;
-	virtual int Update()PURE;
-	virtual void Render(HDC hdc)PURE;
-	virtual void Destroy()PURE;
+	virtual void Start()override;
+	virtual int Update()override;
+	virtual void Render(HDC hdc)override;
+	virtual void Destroy()override;
 public:
 	Stage();
 	virtual ~Stage();

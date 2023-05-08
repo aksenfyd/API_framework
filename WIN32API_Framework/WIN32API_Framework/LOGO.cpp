@@ -1,18 +1,18 @@
-#include "LOGO.h"
+#include "Logo.h"
 #include "SceneManager.h"
 
-LOGO::LOGO()
+Logo::Logo()
 {
 }
 
-LOGO::~LOGO()
+Logo::~Logo()
 {
 }
-void LOGO::Start()
+void Logo::Start()
 {
 }
 
-int LOGO::Update()
+int Logo::Update()
 {
 	if (GetAsyncKeyState('A'))
 	{
@@ -21,11 +21,11 @@ int LOGO::Update()
 	return 0;
 }
 
-void LOGO::Render(HDC hdc)
+void Logo::Render(HDC hdc)
 {
 	Rectangle(hdc, 500, 500, 600, 600);
 }
 
-void LOGO::Destroy()
+void Logo::Destroy()
 {
 }

@@ -5,7 +5,7 @@
 class MainUpdate
 {
 private:
-	//HDC m_hdc;
+	HDC m_hdc;
 
 	RECT rcPoint;
 

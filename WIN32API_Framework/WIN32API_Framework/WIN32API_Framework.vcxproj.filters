@@ -108,10 +108,10 @@
     <ClInclude Include="Enum.h">
       <Filter>헤더 파일\include</Filter>
     </ClInclude>
-    <ClInclude Include="LOGO.h">
+    <ClInclude Include="Logo.h">
       <Filter>소스 파일\02.Scene\LOGO</Filter>
     </ClInclude>
-    <ClInclude Include="MENU.h">
+    <ClInclude Include="Menu.h">
       <Filter>소스 파일\02.Scene\MENU</Filter>
     </ClInclude>
     <ClInclude Include="Stage.h">
@@ -146,10 +146,10 @@
     <ClCompile Include="SceneManager.cpp">
       <Filter>소스 파일\99.Manager\SceneManager</Filter>
     </ClCompile>
-    <ClCompile Include="LOGO.cpp">
+    <ClCompile Include="Logo.cpp">
       <Filter>소스 파일\02.Scene\LOGO</Filter>
     </ClCompile>
-    <ClCompile Include="MENU.cpp">
+    <ClCompile Include="Menu.cpp">
       <Filter>소스 파일\02.Scene\MENU</Filter>
     </ClCompile>
     <ClCompile Include="Stage.cpp">

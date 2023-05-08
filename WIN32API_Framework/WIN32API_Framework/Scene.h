@@ -2,6 +2,7 @@
 #include "Include.h"
 class Scene
 {
+
 public:
 	virtual void Start()PURE;
 	virtual int Update()PURE;
