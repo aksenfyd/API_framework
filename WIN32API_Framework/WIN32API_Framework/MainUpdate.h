@@ -7,9 +7,6 @@ class MainUpdate
 private:
 	HDC m_hdc;
 
-	RECT rcPoint;
-
-
 
 public:
 	void Start();

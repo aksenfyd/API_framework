@@ -5,9 +5,7 @@ class GameObject;
 class Stage:public Scene
 {
 private:
-	HDC m_hdc;
 	GameObject* m_pPlayer;
-	GameObject* m_pEnemy;
 	list<GameObject*>* EnemyList;
 	list<GameObject*>* BulletList;
 public:

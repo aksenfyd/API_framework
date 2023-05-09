@@ -58,6 +58,9 @@
     <Filter Include="소스 파일\02.Scene\Stage">
       <UniqueIdentifier>{533240ab-939e-4707-b003-afeaffbcede8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\99.Manager\InputManager">
+      <UniqueIdentifier>{244685dd-79ca-42fb-89ba-50f19a5bf80c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="WIN32API_Framework.h">
@@ -120,6 +123,9 @@
     <ClInclude Include="Scene.h">
       <Filter>소스 파일\02.Scene</Filter>
     </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>소스 파일\99.Manager\InputManager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WIN32API_Framework.cpp">
@@ -157,6 +163,9 @@
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>소스 파일\02.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>소스 파일\99.Manager\InputManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

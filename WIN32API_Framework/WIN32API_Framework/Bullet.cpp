@@ -14,7 +14,6 @@ GameObject* Bullet::Start()
 	transform.direction = Vector3(1.0f, 0.0f, 0.0f);
 	transform.scale = Vector3(30.0f, 30.0f, 0.0f);
 	
-	float distance = sqrt((transform.position.x * transform.position.x) + (transform.position.y * transform.position.y));
 	Speed = 15;
 
 	Key = "Bullet";
@@ -37,7 +36,7 @@ int Bullet::Update()
 
 void Bullet::Render(HDC hdc)
 {
-	Rectangle(hdc,
+	Ellipse(hdc,
 		int(transform.position.x - (transform.scale.x * 0.5f)),
 		int(transform.position.y - (transform.scale.x * 0.5f)),
 		int(transform.position.x + (transform.scale.x * 0.5f)),

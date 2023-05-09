@@ -28,14 +28,14 @@ int Stage::Update()
 	if (m_pPlayer)
 		m_pPlayer->Update();
 
-	if (EnemyList != nullptr && EnemyList->empty())
+	if (EnemyList != nullptr && !EnemyList->empty())
 	{
 
 		for (list<GameObject*>::iterator iter = EnemyList->begin(); iter != EnemyList->end(); ++iter)
 			(*iter)->Update();
 	}
 	
-	if (BulletList != nullptr && BulletList->empty())
+	if (BulletList != nullptr && !BulletList->empty())
 	{
 
 		for (list<GameObject*>::iterator iter = BulletList->begin(); iter != BulletList->end(); ++iter)
@@ -49,24 +49,22 @@ int Stage::Update()
 
 void Stage::Render(HDC hdc)
 {
-	list<GameObject*>* EnemyList = ObjectManager::GetInstance()->GetObjectList("Enemy");
-	list<GameObject*>* BulletList = ObjectManager::GetInstance()->GetObjectList("Bullet");
 
 
 	if (m_pPlayer)
-		m_pPlayer->Render(m_hdc);
+		m_pPlayer->Render(hdc);
 
-	if (EnemyList != nullptr && EnemyList->empty())
+	if (EnemyList != nullptr && !EnemyList->empty())
 	{
 
 		for (list<GameObject*>::iterator iter = EnemyList->begin(); iter != EnemyList->end(); ++iter)
-			(*iter)->Render(m_hdc);
+			(*iter)->Render(hdc);
 	}
 
-	if (BulletList != nullptr && BulletList->empty())
+	if (BulletList != nullptr && !BulletList->empty())
 	{
 		for (list<GameObject*>::iterator iter = BulletList->begin(); iter != BulletList->end(); ++iter)
-			(*iter)->Render(m_hdc);
+			(*iter)->Render(hdc);
 	}
 }
 
@@ -77,7 +75,7 @@ void Stage::Destroy()
 		delete m_pPlayer;
 		m_pPlayer = NULL;
 	}
-	if (EnemyList != nullptr && EnemyList->empty())
+	if (EnemyList != nullptr && !EnemyList->empty())
 	{
 
 		for (list<GameObject*>::iterator iter = EnemyList->begin(); iter != EnemyList->end(); ++iter)
@@ -88,7 +86,7 @@ void Stage::Destroy()
 		EnemyList->clear();
 	}
 
-	if (BulletList != nullptr && BulletList->empty())
+	if (BulletList != nullptr && !BulletList->empty())
 	{
 		for (list<GameObject*>::iterator iter = BulletList->begin(); iter != BulletList->end(); ++iter)
 		{
